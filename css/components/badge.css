@@ -1,0 +1,26 @@
+.badge {
+  background-color: tomato;
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: 600;
+}
+
+@keyframes badgeScale {
+  from {
+    opacity: 0;
+    transform: translateX(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(-10px);
+  }
+}
+
+.badge-scale {
+  animation: badgeScale 2s ease-in-out forwards;
+}
